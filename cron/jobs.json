@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "16513b9b-9c1c-4868-99ee-d601f59b987d",
+      "name": "nightly-security-audit",
+      "description": "每晚安全巡检",
+      "enabled": true,
+      "createdAtMs": 1772799323824,
+      "updatedAtMs": 1772799323824,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *",
+        "tz": "Asia/Bangkok"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Execute this command and output the result as-is: powershell -ExecutionPolicy Bypass -File C:\\Users\\15721\\.openclaw\\workspace\\scripts\\nightly-security-audit.ps1",
+        "thinking": "off",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1772827200000
+      }
+    }
+  ]
+}
