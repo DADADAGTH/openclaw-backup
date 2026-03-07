@@ -7,7 +7,7 @@
       "description": "每晚安全巡检",
       "enabled": true,
       "createdAtMs": 1772799323824,
-      "updatedAtMs": 1772799323824,
+      "updatedAtMs": 1772827302850,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -26,8 +26,14 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772827200000,
-        "runningAtMs": 1772827200018
+        "nextRunAtMs": 1772913600000,
+        "lastRunAtMs": 1772827200027,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 102823,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "runningAtMs": 1772913600021
       }
     }
   ]
